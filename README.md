@@ -13,11 +13,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | John Essel-Boafo |
+| **LinkedIn** | [John Essel-Boafo](https://www.linkedin.com/in/john-essel-boafo-4ab79555/) |
+| **Location** | Accra, Ghana |
+| **Background** | Cloud, DevOps & AWS Solution Architect |
+| **Goal** | To design, secure, and automate scalable cloud infrastructure while implementing robust CI/CD pipelines and DevOps best practices. |
 
 ---
 
