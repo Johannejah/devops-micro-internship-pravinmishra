@@ -5,7 +5,8 @@
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
 ![Weeks](https://img.shields.io/badge/Weeks_Completed-0%2F15-green?style=for-the-badge)
 
-> 👋 **New here?** Read the [submission instructions](./INSTRUCTIONS.md) first — how to fork, fill in, and submit your assignments.
+> 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
+> Find all the required links & assignment guidelines from here [Required links](./dmi_cohort3_resources.md)
 
 ---
 
@@ -13,11 +14,11 @@
 
 | | |
 |---|---|
-| **Name** | John Essel-Boafo |
-| **LinkedIn** | [John Essel-Boafo](https://www.linkedin.com/in/john-essel-boafo-4ab79555/) |
-| **Location** | Accra, Ghana |
-| **Background** | Cloud, DevOps & AWS Solution Architect |
-| **Goal** | To design, secure, and automate scalable cloud infrastructure while implementing robust CI/CD pipelines and DevOps best practices. |
+| **Name** | Pravin Mishra |
+| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
+| **Location** | Helsinki, Finland |
+| **Background** | Cloud, DevOps & AI Consultant |
+| **Goal** | Train 10,000+ DevOps professionals |
 
 ---
 
@@ -56,7 +57,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 *Earn a badge each week. To unlock: remove the `<!--` and `-->` from the badge line below.*
 
-*Share your stack:* `https://github.com/Johannejah/devops-micro-internship-pravinmishra#my-devops-stack`
+*Share your stack:* `https://github.com/YOUR-USERNAME/devops-micro-internship-pravinmishra#my-devops-stack`
 
 **Preview — what your full stack looks like:**
 
@@ -69,8 +70,8 @@ This is not a course. It is an internship-style program — real deployments, re
 <!-- Week 00 → Internet & Networking Basics -->
 <!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
 
-Week 01 → Success Mindset
-[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)
+<!-- Week 01 → Success Mindset -->
+<!-- [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) -->
 
 <!-- Week 02 → Agentic AI with Claude Code -->
 <!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
@@ -133,7 +134,7 @@ Week 01 → Success Mindset
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ✅ Completed | ✅ Solved | **https://www.linkedin.com/posts/john-essel-boafo-4ab79555_what-would-a-journalist-write-about-your-share-7478653776858398720-KcKV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAuvIYMB9Ryolxl8KsPVg0BaN-tpeQW214U** | **https://medium.com/@johannejah/what-would-a-journalist-write-about-your-career-three-years-from-now-542d80c56487?sharedUserId=johannejah** |
+| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
 | 03 | Linux for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |
