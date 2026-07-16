@@ -110,7 +110,7 @@ https://www.linkedin.com/posts/john-essel-boafo-4ab79555_dmibypravinmishra-agent
 - [ ] `/tf-plan` executed and output analyzed by Claude
 - [ ] All required screenshots added
 - [ ] GitHub repository URL included
-[ ] LinkedIn post URL included
+- [ ] LinkedIn post URL included
 
 ---
 
