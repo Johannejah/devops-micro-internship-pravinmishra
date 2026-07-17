@@ -371,7 +371,7 @@ I will implement a strict 90-minute technical focus block every Monday through F
 
 Paste your LinkedIn post link here:
 
-https://www.linkedin.com/posts/john-essel-boafo-4ab79555_what-would-a-journalist-write-about-your-share-7478653776858398720-KcKV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAuvIYMB9Ryolxl8KsPVg0BaN-tpeQW214U
+**https://www.linkedin.com/posts/john-essel-boafo-4ab79555_what-would-a-journalist-write-about-your-share-7478653776858398720-KcKV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAuvIYMB9Ryolxl8KsPVg0BaN-tpeQW214U**
 
 ---
 
