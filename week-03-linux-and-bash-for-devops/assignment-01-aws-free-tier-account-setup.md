@@ -20,19 +20,23 @@ Demonstrate understanding of AWS basics and Free Tier usage by answering the fol
 
 #### Question 1 — What is an AWS account, and why do you need it at this stage?
 
-Write your answer here.
+An AWS account acts as a secure, isolated tenant boundary that grants access to Amazon's vast suite of cloud resources, billing structures, and security controls. At this early stage of onboarding EpicReads, having a dedicated account is crucial to establish a sandboxed environment where we can safely configure identity access, explore Free Tier services, and design a foundational, secure infrastructure without impacting active workloads or incurring unnecessary costs.
 
 ---
 
 #### Question 2 — What is AWS Free Tier, and how long does it last?
 
-Write your answer here.
+The AWS Free Tier is a program designed to let users explore and gain hands-on experience with cloud services at no cost. Its duration depends on the specific offer type: "Always Free" services have no expiration date (within monthly usage limits), while standard 12-Month Free offers expire one year after signup. Additionally, under the latest AWS model, new accounts can choose a 6-Month Free Plan utilizing up to $200 in promotional trial credits, or a Paid Plan where the free credits expire after 12 months.
 
 ---
 
 #### Question 3 — Name three AWS Free Tier services and their free usage limits.
 
-Write your answer here.
+1. Amazon EC2 (Elastic Compute Cloud): Under the 12-Month Free Tier, 750 hours per month of t2.micro or t3.micro instance usage (depending on your region).
+
+2. Amazon S3 (Simple Storage Service): Under the 12-Month Free Tier, 5 GB of standard object storage.
+
+3. Amazon DynamoDB: Under the Always Free tier, 25 GB of NoSQL database storage.
 
 ---
 
@@ -56,7 +60,7 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 
 #### Screenshot 1 — AWS Account page showing account name (email may be blurred)
 
-Add your screenshot here.
+![screenshot](./screenshots/ss11.JPG)
 
 ---
 
