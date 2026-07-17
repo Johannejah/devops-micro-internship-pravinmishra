@@ -89,6 +89,8 @@ Prove the prompt-level hook works by typing a destructive prompt and verifying i
 
 ### Evidence
 
+![screenshot](./screenshots/ss66.JPG)
+
 #### Screenshot 6 — UserPromptSubmit hook blocking the destructive prompt
 
 ---
@@ -101,6 +103,8 @@ Prove the tool-level hook works by asking Claude to execute a dangerous Bash com
 
 ### Evidence
 
+![screenshot](./screenshots/ss67.JPG)
+
 #### Screenshot 7 — PreToolUse hook blocking terraform destroy
 
 ---
@@ -112,6 +116,8 @@ Prove the tool-level hook works by asking Claude to execute a dangerous Bash com
 Prove the logging hook runs after a successful command execution and records Terraform operations.
 
 ### Evidence
+
+![screenshot](./screenshots/ss68.JPG)
 
 #### Screenshot 8 — Claude running terraform validate successfully
 
