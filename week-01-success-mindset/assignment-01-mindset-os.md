@@ -33,7 +33,8 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
+Most people learning DevOps believe that success lies in mastering the maximum number of tools—building an endless list of certifications across Docker, Kubernetes, Jenkins, and AWS. I strongly disagree with this approach.
+I believe that over-focusing on tools is a trap that actually slows down real expertise. DevOps is not a collection of software; it is a philosophy of empathy, communication, and system efficiency. A great engineer doesn't just know how to write a Kubernetes configuration; they understand why the development and operations teams are failing to communicate in the first place. If you don't master the underlying systems thinking, culture, and problem-solving methodologies, you are simply a tool-operator, not a DevOps practitioner. The best way to learn is to focus on the human and architectural bottlenecks first, then use the tools as a secondary means to solve them. True mastery is tool-agnostic.
 
 ---
 
@@ -55,11 +56,11 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Action and physical execution precede the generation of true motivation and clarity.
 
 ### Evidence from my life
 
-Add your answer here...
+Evidence from my life: Whenever I waited until I felt fully "ready" or motivated to study complex technical documentation or practice terminal commands, I procrastinated for days. The moment I forced myself to just open the laptop and write the first line of code or execute a single script, the momentum immediately followed, and my focus locked in.
 
 ---
 
@@ -67,11 +68,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Relying on memory rather than clear documentation guarantees operational failure as a system grows.
 
 ### Evidence from my life
 
-Add your answer here...
+Evidence from my life: Whenever I executed server configurations, environment variables, or administrative logistics procedures based purely on memory, critical details eventually slipped through the cracks. The moment I committed to maintaining structured, step-by-step markdown logs and runbooks, deployment errors and onboarding friction dropped to zero.
 
 ---
 
@@ -79,11 +80,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Skills that are not actively forced to adapt to real-world friction rapidly atrophy.
 
 ### Evidence from my life
 
-Add your answer here...
+Evidence from my life: I noticed that passing technical certifications gave me a temporary wave of knowledge, but that knowledge began to fade within weeks if left dormant. Only by immediately applying those concepts to live lab environments, breaking configurations on purpose, and building actual cloud infrastructure did the skills permanently stick.
 
 ---
 
@@ -135,13 +136,35 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+What if you could open a magazine a few years from now and read a major profile on your professional achievements?
+
+Not a summary of where you stand at this moment, but a reflection of the engineer that your daily routines, discipline, and grit are actively moulding you into.
+
+For this week’s DevOps Micro Internship (DMI) assignment, we were pushed to confront a powerful prompt: Designing our “Version 2.0.” The challenge required us to adopt the lens of a tech journalist looking back on our career path a few years down the line. This wasn’t an exercise in daydreaming — it was an intentional blueprint of the technical trajectory we are actively choosing to construct.
+
+So, here’s my Version 2.0.
+
+When John Essel-Boafo joined the DevOps Micro Internship (DMI) Cohort 3 on June 27, 2026, he wasn’t a typical entry-level applicant. He arrived with a Master of Business Administration in Human Resource Administration, a strong background in sociology and economics, and years of experience managing complex operational site logistics and rigorous labour compliance audits. However, the world of cloud infrastructure, automated continuous integration pipelines, and container environments was a brand-new landscape.
+
+Rather than trying to hide his non-traditional background, John weaponized it. He realised that the human dynamics, organisational systems, and strict compliance frameworks he mastered in his business career were the exact missing ingredients needed to build world-class tech architecture. He dove straight into the deep end — spinning up Linux environments, building Docker images, and designing cloud networks. Instead of just following basic video tutorials, he forced himself into the terminal every single day, deliberately breaking deployment environments so he could master the art of fixing them.
+
+Within three years, that systematic discipline paid off. John stepped into the tech space as a Senior DevOps and Cloud Security Architect. He successfully engineered and shipped high-availability infrastructure deployments, highlighted by an open-source security framework that used the AWS SDK to programmatically pull credentials from AWS Secrets Manager — completely eliminating hardcoded passwords in production code. His production-ready projects on GitHub gained rapid traction, and advanced technical credentials like the AWS Certified DevOps Engineer — Professional validated the deep expertise he built through hands-on laboratory execution.
+
+Beyond his engineering output, John became widely known for his unique technical writing style. Remembering how steep the technical learning curve felt, he dedicated his Medium publication to breaking down complex cloud concepts using vivid, real-world analogies. Whether comparing Kubernetes clusters to automated shipping docks or explaining the AWS SDK as an armoured delivery truck, his articles demystified engineering for thousands of readers and became essential reading for professionals making their own career transitions.
+
+His leadership naturally extended into the community. John returned to his engineering roots in Ghana, transitioning from an eager learner into a core coordinator and mentor within the AWS Accra User Group, actively helping the next generation of African tech talent clear technical roadblocks.
+
+Looking back, joining DMI Cohort 3 was the ultimate inflection point that bridged his past operational expertise with his future technical mastery. His journey shattered the myth that you have to start from zero to enter tech, proving instead that an engineering career is built on systems thinking, regular execution, and the courage to show up daily.
+
+Whether this story reads like a vision or a future biography, one thing is certain: every skill I learn, every project I build, and every challenge I embrace from today brings me one step closer to becoming this version of myself.
+
+P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by Pravin Mishra. You can start your DevOps journey by joining this Discord community.
 
 ### Public Link
 
 Paste your link here:
 
-`Add your URL here`
+https://medium.com/@johannejah/what-would-a-journalist-write-about-your-career-three-years-from-now-542d80c56487?sharedUserId=johannejah
 
 ---
 
@@ -165,7 +188,7 @@ This is about self-awareness, not judgment.
 
 ### Answer Format
 
-**Yes / No**
+Yes
 
 If Yes:
 
@@ -173,7 +196,7 @@ If Yes:
 
 ## Answer
 
-Add your answer here...
+Choosing to take a shortcut instead of doing the work properly immediately triggered a heavy wave of anxiety and stress. While it saved a bit of time upfront, it left me with a constant fear that the flaws would be discovered. Instead of feeling good about finishing quickly, I felt guilty and worried about the compromised quality of the work. It became exhausting to carry that pressure, and I deeply regretted not just putting in the honest, disciplined effort to do it right from the start.
 
 ---
 
@@ -199,16 +222,16 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+1. Atomic Habits by James Clear
+2. How to Create World-Class Agility, Reliability, and Security in Technology Organizations by Gene Kim, Jez Humble
+3. Leadership Beyond the Management Track by Will Larson
+4. Rules for Focused Success in a Distracted World by Cal Newport
+5. The New Psychology of Success by Carol S. Dweck
+6. The Laws of Human Nature by Robert Greene
+7. Negotiating As If Your Life Depended On It by Chris Voss
+8. Timeless Lessons on Wealth, Greed, and Happiness by Morgan Housel
+9. The Intelligent Investor by Benjamin Graham
+10. Designing Data-Intensive Applications by Martin Kleppmann
 
 ---
 
@@ -237,16 +260,9 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+* Weekly physical exercise routines and active workout sessions
+* Daily sleep quality tracking and overnight recovery hours
+* Personal monthly budgeting, savings percentage, and income-to-expense ratios
 
 ---
 
@@ -272,7 +288,7 @@ Examples:
 
 Answer:
 
-Add your answer here...
+Yes
 
 ---
 
@@ -290,7 +306,11 @@ Example:
 
 #### My Weekly Routine
 
-Add your answer here...
+1. Monday – Friday: 90 minutes of dedicated, uninterrupted technical focus (Hands-on terminal execution, lab architecture deployments, and Python scripts).
+
+2. Saturday: DMI Session, technical cohort engagement, and updating laboratory documentation.
+
+3. Sunday: Weekly professional review, checking data tracking metrics, organizing upcoming labor compliance documentation, and scheduling the week's Medium analogies.
 
 ---
 
@@ -298,11 +318,11 @@ Add your answer here...
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+Monday to Friday from 8:00 PM to 9:30 PM, and Saturdays from 10:00 AM onwards for deep-dive lab sessions and cohort participation.
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+How Many Sessions Per Week?: 6 dedicated sessions per week (5 weekday evening deep-work blocks + 1 primary Saturday session).
 
 ---
 
@@ -316,7 +336,11 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
+1. Phone Rules: The phone is placed completely out of sight in another room or inside a drawer on "Do Not Disturb" during the 90-minute evening engineering block.
+
+2. Social Media Rules: All technical work is conducted on a dedicated desktop profile where communication platforms, personal email tabs, and trading terminals are blocked entirely.
+
+3. Environment Setup: Clear desk policy with only the primary laptop, a notebook for structural architecture diagrams, and a visual countdown timer active to lock in concentration.
 
 ---
 
@@ -324,28 +348,28 @@ Add your answer here...
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+My biggest insight is realizing that I possess a strong capacity for structured execution when I intentionally bridge my deep operational background with my technical engineering goals. I discovered that treating my personal growth and career pivot as an architectural project—complete with clear blueprints and defined system rules—completely changes my engagement level and gives me the confidence to build a solid "Version 2.0" identity.
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+The biggest loop I noticed is the temptation to seek immediate tactical progress or shortcuts when facing complex technical challenges, rather than embracing the slower, disciplined pace required for deep, foundational mastery. This quick-fix approach creates internal friction and anxiety about the structural integrity of my learning, showing me that skipping steps ultimately yields negative operational leverage.
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+I will implement a strict 90-minute technical focus block every Monday through Friday from 8:00 PM to 9:30 PM. During this exact window, my phone will be placed in another room on "Do Not Disturb," and I will operate entirely within a dedicated desktop engineering profile to focus exclusively on hands-on terminal execution and system automation architectures.
 
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/john-essel-boafo-4ab79555_what-would-a-journalist-write-about-your-share-7478653776858398720-KcKV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAuvIYMB9Ryolxl8KsPVg0BaN-tpeQW214U
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
-- Blog / Medium : **ADD LINK HERE**  
+- LinkedIn Post URL: **https://www.linkedin.com/posts/john-essel-boafo-4ab79555_what-would-a-journalist-write-about-your-share-7478653776858398720-KcKV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAuvIYMB9Ryolxl8KsPVg0BaN-tpeQW214U**  
+- Blog / Medium : **https://medium.com/@johannejah/what-would-a-journalist-write-about-your-career-three-years-from-now-542d80c56487?sharedUserId=johannejah**  
 
 ---
 
