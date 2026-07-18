@@ -54,13 +54,13 @@ Write your answer here.
 
 **2. What proves SSH is active on port 22?**
 
-Write your answer here.
+There are two clear proofs that SSH is active on port 22. Locally on the virtual machine, running sudo systemctl status ssh displays an active and running daemon, and checking netstat/ss commands shows sshd listening on port 22. Remotely, the definitive proof is our ability to establish a successful terminal session from our local machine using ssh -i <key.pem> ubuntu@<public-ip>, which wouldn't initialize if port 22 wasn't open and listening.
 
 ---
 
 **3. Did you find any unexpected open ports? Explain briefly.**
 
-Write your answer here.
+No unexpected open ports were found active during the configuration. Outside of standard system loopback operations, the scan and listening sockets only showed port 22 actively open for our secure administrative SSH connection and port 80 actively open for Nginx to serve the EpicReads web app traffic. This minimal footprint is ideal as it keeps the attack surface small and aligns perfectly with cloud security best practices.
 
 ---
 
@@ -96,13 +96,19 @@ Answer the following in your own words:
 
 **1. What happens if Nginx fails to restart in production?**
 
-Write your answer here.
+If Nginx fails to restart during a production update, the web server can experience two critical issues depending on how it failed. If it crashed entirely, the service drops, resulting in an immediate outage where users face "Connection Refused" or timeout errors when accessing the site. If it simply rejected the new configuration during a reload, it may continue running on the old configuration; however, this leaves the deployment in a broken state where new code updates are stalled, and any subsequent server reboots will cause a total service failure.
 
 ---
 
 **2. What's your basic rollback plan?**
 
-Write your answer here.
+My basic rollback plan follows a structured, three-step safety protocol to minimize downtime:
+
+1. Validate and Revert Configurations: Immediately run sudo nginx -t to identify the syntax error. If it cannot be fixed within seconds, copy the last known working backup file back into /etc/nginx/sites-available/default.
+
+2. Restore the Build Directory: If the error is caused by a corrupt application build, quickly swap the Nginx root directory path back to the previous stable build folder or a static maintenance page.
+
+3. Force a Clean Restart: Execute sudo systemctl restart nginx to bring the server back to a stable running state, ensuring the public URL is functional before troubleshooting the new deployment files offline.
 
 ---
 
@@ -141,19 +147,19 @@ Answer the following in your own words:
 - If yes, mention 1–2 example error lines from the logs and explain what each one means in simple terms.
 - If no, explain what it means if the error log is empty or shows no recent errors during your check.
 
-Write your answer here.
+No, the Nginx error log (/var/log/nginx/error.log) did not show any recent errors during my check. An empty error log, or one without recent entries, simply means that the Nginx master and worker processes are running smoothly, the configuration syntax is valid, and the server has not encountered any internal crashes, permission denials, or broken upstream connections while attempting to serve the application files.
 
 ---
 
 **2. If there were no errors, what does that indicate about the system?**
 
-Write your answer here.
+The absence of errors indicates that the web server environment is completely healthy, stable, and correctly configured. It proves that Nginx has full read permissions to the React production build directory (/home/ubuntu/my-react-app/build), the network ports are binding successfully without conflict, and the system is operating exactly as intended under normal conditions.
 
 ---
 
 **3. Based on the access logs, were your curl requests visible in the log entries? What does that prove about traffic flow?**
 
-Write your answer here.
+Yes, the curl requests were clearly visible in the Nginx access logs (/var/log/nginx/access.log), showing the local or remote IP address, the timestamp, a HTTP GET / request, and a successful 200 OK status response. This visibility definitively proves that the entire network traffic loop is open and functional; it demonstrates that requests successfully pass through the AWS firewall/security groups, reach the EC2 instance, are accepted by Nginx, and receive a proper response from the application.
 
 ---
 
@@ -195,13 +201,13 @@ Answer the following in your own words:
 
 **1. Which resource looks most critical right now? (CPU/load, memory, or disk) Explain why.**
 
-Write your answer here.
+Memory (RAM) is the most critical resource to watch closely right now. Running JavaScript-heavy modern applications like a React build process or hosting background node modules uses a significant portion of a standard micro-instance's memory footprint. While a high CPU load spikes temporarily during builds and drops immediately after, low available memory risks trigger the Linux Out-Of-Memory (OOM) killer, which will abruptly terminate the Nginx or Node process and take the site offline.
 
 ---
 
 **2. What happens if disk becomes 100% full in a production server?**
 
-Write your answer here.
+When a production server's disk hits 100% capacity, it triggers an immediate system crisis. Nginx and the operating system will no longer be able to write to essential access or error logs, causing services to crash or reject incoming traffic. Additionally, database transactions will fail, package managers cannot install updates, cron jobs stall, and administrative functions (like creating SSH temporary session keys) break entirely—effectively locking you out of the machine and causing a severe application outage.
 
 ---
 
@@ -379,7 +385,7 @@ Write your answer here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`__________________________`
 
 ---
 
