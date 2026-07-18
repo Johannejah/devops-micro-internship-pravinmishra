@@ -25,16 +25,13 @@ Take a screenshot of your interaction showing:
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
-
-
-Replace `task-1-chatgpt.png` with your actual screenshot file name.
+![Task 1 Screenshot](screenshots/chatgpt.jpg)
 
 ---
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+From this task, I learned that a protocol acts as the essential "social etiquette" for the digital world, ensuring that diverse devices can communicate without chaos. By using the restaurant analogy, I now see that networking isn't just about cables and signals, but about a structured, step-by-step agreement that guarantees data reaches its destination in a readable and reliable format.
 
 ---
 
@@ -59,7 +56,9 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+To understand how the internet functions, think of it as a massive, high-speed postal system governed by a set of universal rules called TCP/IP. This foundational suite of protocols ensures that different devices can "speak" the same language across the globe.
+When you access a website, your data is broken down into small, manageable chunks known as Packet Switching. Instead of sending one massive file, these packets take the most efficient routes across various routers to reach their destination. To ensure they arrive at the right place, every device is assigned a unique IP Address, acting much like a digital home address.
+Finally, your web browser uses HTTP (Hypertext Transfer Protocol) to request and receive webpage data. For security, HTTPS adds a layer of encryption, ensuring that the "conversation" between your computer and the server remains private and tamper-proof.
 
 ---
 
@@ -91,10 +90,7 @@ EpicReads bookstore has two application versions:
 
 Save your diagram image in the `screenshots` folder and update the file name below.
 
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
-
-
-Replace `task-3-diagram.png` with your actual diagram file name.
+![Application Architecture Diagram](screenshots/architect.png)
 
 ---
 
@@ -102,18 +98,18 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* Mobile Technologies: Flutter, React Native, Swift (iOS), or Kotlin (Android).
+* Web Technologies: React, Angular, Vue.js, or plain HTML/CSS/JavaScript.
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* Programming Languages & Frameworks: Python (Django/Flask), JavaScript (Node.js/Express), Java (Spring Boot), or Go.
+* API Protocols: REST, GraphQL, or gRPC (used for the Frontend to talk to the Backend).
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* Relational Databases (SQL): PostgreSQL, MySQL, or Microsoft SQL Server.
+* Cloud/NoSQL Databases: MongoDB, Amazon DynamoDB, or Amazon RDS.
 
 ---
 
@@ -142,7 +138,8 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+Think of DNS (Domain Name System) as the "phonebook" of the internet. While computers communicate using numerical IP addresses (like 52.172.142.222), humans find it much easier to remember names like epicreads.com. DNS translates those human-friendly names into the machine-readable numbers needed to locate a specific server.
+To connect EpicReads to its server, you should use an A Record (Address Record). This specific record type maps a domain name directly to an IPv4 address. By configuring this, any customer typing the domain into their browser will be automatically directed to the correct server IP and port.
 
 ---
 
@@ -178,10 +175,7 @@ ls
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
-
-
-Replace `task-5-vscode.png` with your actual screenshot file name.
+![VS Code Setup Screenshot](screenshots/vscode.jpg)
 
 ---
 
@@ -217,9 +211,7 @@ Add the following credit note at the end of your post:
 
 Paste your LinkedIn post URL here:
 
-```text
-Add your URL here...
-```
+https://www.linkedin.com/posts/john-essel-boafo-4ab79555_epic-reads-shop-young-adult-ya-books-share-7441830093540241408-BKie/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAuvIYMB9Ryolxl8KsPVg0BaN-tpeQW214U
 
 ---
 
@@ -227,7 +219,23 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+From Managing People to Managing Systems: Bridging HR Strategy with DevOps & Cloud Security.
+I’ve officially kicked off my adventure into the world of DevOps and Cloud Security. This week, I’ve been diving deep into the foundational "plumbing" of the internet to understand how modern applications actually work.
+Here’s a quick recap of what I’ve mastered so far:
+ChatGPT
+ChatGPT as a Learning Assistant I’ve learned that the secret to rapid learning is in the prompt. By treating AI as a "Technical Mentor" and asking for real-world analogies (like comparing networking protocols to a restaurant's workflow), complex concepts become much easier to digest.
+Internet & Networking Essentials 
+The internet isn't magic; it's a series of agreements. I explored Packet Switching, where data is broken into small chunks to travel the most efficient paths, and the TCP/IP suite, which acts as the universal language for all connected devices.
+App Architecture 
+2-Tier vs. 3-Tier I analyzed the architecture for a digital bookstore, EpicReads. While a 2-tier system is simple, moving to a 3-Tier Architecture (Frontend ↔️ Backend ↔️ Database) is the gold standard for security and scalability—crucial for any Cloud Security professional!
+DNS
+The Internet’s Phonebook No one wants to memorize an IP address like 52.172.142.222. I learned how the Domain Name System (DNS) translates human-friendly names like epicreads.com into machine-readable IPs using A Records.
+VS Code Setup 
+I’ve optimized my workstation by setting up Visual Studio Code, the industry-standard editor. With the right extensions, it’s not just a text editor; it’s a powerful command center for writing code and managing cloud infrastructure.
+This is just the beginning of my journey toward AWS and Cloud Security excellence!
+#DevOps #CloudSecurity #AWS #TechTransition #ContinuousLearning #NetworkingBasics
+
+P.S. This post is part of the FREE DevOps Micro Internship Cohort run by Pravin Mishra. You can start your DevOps journey for free from his YouTube Playlist.
 
 ---
 
@@ -235,19 +243,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+I found using ChatGPT as a learning assistant and creating real-world analogies (like the restaurant protocol) to be very intuitive, as they bridge the gap between complex tech and everyday logic.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+Visualizing the flow of Packet Switching and the specific distinctions between 2-Tier and 3-Tier architectures required more focus to ensure I understood how security is managed at each layer.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+Next week, I plan to spend more time practicing with VS Code extensions and terminal commands to build the "muscle memory" needed for efficient cloud infrastructure management.
 
 ---
 
