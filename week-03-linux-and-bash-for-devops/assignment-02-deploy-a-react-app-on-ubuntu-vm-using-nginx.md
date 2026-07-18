@@ -20,7 +20,7 @@ Install Node.js and npm on the Ubuntu VM and verify the installation.
 
 #### Screenshot 1 — Output of `node -v && npm -v` showing installed versions
 
-![screenshot](./screenshots/ss321.JPG)
+Add your screenshot here.
 
 ---
 
@@ -34,7 +34,7 @@ Install Nginx, start the service, and confirm it is running.
 
 #### Screenshot 2 — Output of `systemctl status nginx --no-pager` showing Active (running)
 
-![screenshot](./screenshots/ss322.JPG)
+Add your screenshot here.
 
 ---
 
@@ -48,7 +48,7 @@ Clone the project repository and verify the project files are present.
 
 #### Screenshot 3 — Output of `ls` inside the `my-react-app` directory showing project files
 
-![screenshot](./screenshots/ss323.JPG)
+Add your screenshot here.
 
 ---
 
@@ -62,7 +62,7 @@ Update `App.js` with your full name and the current date.
 
 #### Screenshot 4 — `nano App.js` open showing your full name and date filled in
 
-![screenshot](./screenshots/ss324.JPG)
+Add your screenshot here.
 
 ---
 
@@ -76,7 +76,7 @@ Install dependencies and generate the production build.
 
 #### Screenshot 5 — Output of `ls` inside `my-react-app` showing the `build/` folder generated
 
-![screenshot](./screenshots/ss325.JPG)
+Add your screenshot here.
 
 ---
 
@@ -90,7 +90,7 @@ Copy the production build files to the Nginx web root directory.
 
 #### Screenshot 6 — Output of `ls /var/www/html/` showing the deployed build contents
 
-![screenshot](./screenshots/ss326.JPG)
+Add your screenshot here.
 
 ---
 
@@ -104,13 +104,13 @@ Apply Nginx configuration for React routing and confirm the service is active.
 
 #### Screenshot 7 — Output of `systemctl is-active nginx` showing `active`
 
-![screenshot](./screenshots/ss327.JPG)
+Add your screenshot here.
 
 ---
 
 #### Screenshot 8 — Output of `cat /etc/nginx/sites-available/default` showing the Nginx config
 
-![screenshot](./screenshots/ss328.JPG)
+Add your screenshot here.
 
 ---
 
@@ -124,13 +124,13 @@ Verify the React application is publicly accessible via the server's public IP.
 
 #### Screenshot 9 — Output of `curl ifconfig.me` showing the server's public IP address
 
-![screenshot](./screenshots/ss329.JPG)
+Add your screenshot here.
 
 ---
 
 #### Screenshot 10 — Browser showing the deployed React app at `http://<public-ip>` with your name and date visible
 
-![screenshot](./screenshots/ss330.JPG)
+Add your screenshot here.
 
 ---
 
@@ -142,7 +142,7 @@ Verify the React application is publicly accessible via the server's public IP.
 
 Paste your LinkedIn post URL here:
 
-https://www.linkedin.com/in/john-essel-boafo-4ab79555/
+`Add your URL here`
 
 ---
 
