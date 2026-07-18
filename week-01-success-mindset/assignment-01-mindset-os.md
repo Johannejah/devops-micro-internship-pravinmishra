@@ -223,6 +223,9 @@ Choose books that improve:
 ## Book List
 
 1. Atomic Habits by James Clear
+
+![screenshot](./screenshots/Atomic_Habits.jpg)
+
 2. How to Create World-Class Agility, Reliability, and Security in Technology Organizations by Gene Kim, Jez Humble
 3. Leadership Beyond the Management Track by Will Larson
 4. Rules for Focused Success in a Distracted World by Cal Newport
