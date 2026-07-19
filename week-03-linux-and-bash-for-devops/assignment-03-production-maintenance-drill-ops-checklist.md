@@ -20,25 +20,25 @@ Verify that the deployed React application is reachable from the browser and con
 
 #### Screenshot 1 — Browser showing the React app with your Full Name visible on the UI
 
-Add your screenshot here.
+![screenshot](./screenshots/ss331.png)
 
 ---
 
 #### Screenshot 2 — Output of `ip a`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss332.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -tulpen`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss333.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo ufw status`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss334.png)
 
 ---
 
@@ -48,7 +48,9 @@ Answer the following in your own words:
 
 **1. What proves Nginx is listening on 0.0.0.0:80?**
 
-Write your answer here.
+We can prove Nginx is listening on all local IPv4 network interfaces (0.0.0.0) on port 80 by executing the network socket query command sudo ss -tulpn | grep :80 (or sudo netstat -tulnp | grep :80) directly inside the terminal.
+
+The resulting output will display 0.0.0.0:80 under the local address column alongside nginx in the process name column. This explicitly confirms that the Nginx master process has bound itself to the port and is actively running to accept incoming public web traffic.
 
 ---
 
@@ -74,19 +76,19 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 
 #### Screenshot 1 — Output of `systemctl status nginx --no-pager`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss335.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss336.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -lptn '( sport = :80 )'`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss337.png)
 
 ---
 
@@ -122,19 +124,19 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss338.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss339.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss340.png)
 
 ---
 
@@ -173,25 +175,25 @@ Assess server capacity and detect potential performance or failure risks.
 
 #### Screenshot 1 — Output of `uptime`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss341.png)
 
 ---
 
 #### Screenshot 2 — Output of `free -h`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss342.png)
 
 ---
 
 #### Screenshot 3 — Output of `df -h`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss343.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss344.JPG)
 
 ---
 
@@ -221,19 +223,19 @@ Ensure the correct React build is deployed and Nginx is serving it properly.
 
 #### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss345.png)
 
 ---
 
 #### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss346.JPG)
 
 ---
 
 #### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
 
-Add your screenshot here.
+![screenshot](./screenshots/ss347.png)
 
 ---
 
@@ -243,7 +245,11 @@ Answer the following in your own words:
 
 **1. How do you confirm that the correct version of the application is deployed?**
 
-Write your answer here.
+1. Reviewing Git Commit Hashes: Run git log -n 1 --oneline inside the deployment directory on the server. Comparing this unique commit hash or message against your local repository confirms that the exact codebase version you intended to push is what is currently sitting on the instance.
+
+2. Checking Application Build Metadata: During the build step, you can inject a version number, commit ID, or compilation timestamp directly into the environment variables (e.g., using REACT_APP_VERSION in a .env file). If this version footprint is rendered in the UI or inside an HTML comment, you can verify it instantly via the browser's Developer Tools or by checking the source code.
+
+3. Verifying Asset Hashes: Check the compiled filenames inside the build/static/js/ directory. Webpack automatically generates unique cryptographic content hashes for its production bundle filenames whenever changes are made. Matching these newly built filenames against your build artifacts confirms that Nginx is actively serving the updated iteration of the code.
 
 ---
 
@@ -257,19 +263,19 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-Add your screenshot here.
+![screenshot](./screenshots/ss348.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-Add your screenshot here.
+![screenshot](./screenshots/ss349.png)
 
 ---
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![screenshot](./screenshots/ss350.png)
 
 ---
 
@@ -279,19 +285,25 @@ Answer the following in your own words:
 
 **1. What caused the configuration failure?**
 
-Write your answer here.
+The configuration failure was caused by a syntax error due to a missing semicolon (;) at the end of the try_files directive block. Nginx configuration files rely strictly on semicolons to mark the termination of an instruction line; omitting it causes the parser to read into the next line continuously, breaking the grammatical rules of the configuration layout.
 
 ---
 
 **2. How did you fix the issue?**
 
-Write your answer here.
+I resolved the issue by opening the configuration file back up in the terminal editor and re-appending the semicolon to the end of the try_files line. After saving the changes, I ran the Nginx validation test tool to ensure the parser read the parameters successfully and cleared the syntax error flag.
 
 ---
 
 **3. How can you avoid this kind of issue in real production systems?**
 
-Write your answer here.
+To prevent these syntax breaks from impacting a live production environment, we can implement three core DevOps safeguards:
+
+Never skip validation: Always run sudo nginx -t to test configurations before attempting a service reboot.
+
+Use soft reloads: Instead of running a hard restart, use sudo systemctl reload nginx. A reload will read the new configurations but safely reject them if an error is present, keeping the server up on its old configuration instead of causing an outage.
+
+Automate in CI/CD: Implement linter verification scripts and automated staging environment tests in a CI/CD pipeline to catch missing punctuation before code changes ever touch a live machine.
 
 ---
 
@@ -305,13 +317,13 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-Add your screenshot here.
+![screenshot](./screenshots/ss351.png)
 
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![screenshot](./screenshots/ss352.png)
 
 ---
 
@@ -321,19 +333,25 @@ Answer the following in your own words:
 
 **1. What caused the application to break in this scenario?**
 
-Write your answer here
+The application broke because we manually moved the active web application content directory (/var/www/html) to a backup location and replaced it with a completely empty directory. When Nginx received the incoming curl request, it went to look for the web application assets (like index.html) at its configured root path, found nothing there, and returned a non-200 failure response (such as a 404 Not Found or 403 Forbidden error code).
 
 ---
 
 **2. How did you fix the issue and restore the application?**
 
-Write your answer here.
+I restored the application by first deleting the empty mock directory using sudo rm -rf /var/www/html. Then, I restored the original operational files by renaming the backup directory back to its production path with sudo mv /var/www/html_backup /var/www/html. Finally, I executed sudo systemctl restart nginx to ensure all file descriptor caches cleared, which brought the application back to a fully functional status (returning a clean 200 OK response).
 
 ---
 
 **3. What steps would you take to prevent this kind of issue in real production systems?**
 
-Write your answer here.
+To prevent accidental folder deletions or missing path disruptions in a live enterprise environment, I would implement the following DevOps practices:
+
+Immutable Infrastructure & Blue/Green Deployments: Avoid modifying live directories directly on production servers. Instead, spin up a new server instance with the updated code (Green) and swap traffic over from the old one (Blue) only after validation tests pass.
+
+Strict Linux Permission Controls: Lock down access permissions so that standard users cannot write to or delete core system directories, restricting destructive commands like rm -rf to strictly audited automated deployment runners.
+
+Configuration Management Tools: Use Infrastructure-as-Code (IaC) tools like Ansible, Terraform, or Docker containers. If a file or folder is accidentally altered or deleted, these configuration management tools will automatically detect the drift and self-heal the server back to its desired state.
 
 ---
 
@@ -349,31 +367,31 @@ Answer the following in your own words:
 
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-Write your answer here.
+Sharing passwords leaves servers highly vulnerable to automated brute-force attacks, credential stuffing, and human error (such as choosing weak passwords or leaking them via chat tools). SSH key-based authentication uses an asymmetric cryptographic key pair (a public and a private key). The private key remains securely on your local machine and never travels across the network during authentication. Because these keys are incredibly long and complex, they are computationally impossible to guess or brute-force, providing a drastically higher layer of security.
 
 ---
 
 **2. Why should only required ports be open on a production server?**
 
-Write your answer here.
+Every open port on a server represents a potential doorway for malicious actors to probe for software vulnerabilities, misconfigurations, or entry points into your network. Keeping unnecessary ports open increases your system's attack surface. Minimizing open ports to only what is strictly necessary (for example, port 22 for administrative SSH and port 80/443 for web traffic) isolates your services, limits background noise from automated internet scanners, and keeps your cloud infrastructure secure.
 
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
-Write your answer here.
+Production servers can occasionally experience unexpected reboots due to cloud provider maintenance, underlying hardware failures, power issues, or kernel updates. If Nginx is not explicitly enabled to start on boot (sudo systemctl enable nginx), the web server will remain offline after the machine restarts. This results in an extended, unmanaged application outage until an administrator manually logs in via SSH to start the service, severely harming system availability and reliability.
 
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Write your answer here.
+Publicly exposing credentials—such as accidentally committing AWS access keys, database passwords, or private SSH keys to a public GitHub repository—gives malicious bots and bad actors immediate access to your infrastructure. Automated scrapers index public platforms constantly. Within minutes of an accidental leak, attackers can hijack your cloud resources to deploy ransomware, spin up expensive crypto-mining rigs, steal sensitive application data, or completely delete your production infrastructure.
 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
-Write your answer here.
+Cloud infrastructure operates on a utility billing model where you pay for what you provision, regardless of whether it is actively handling user traffic. Leaving unneeded virtual machines, test databases, or orphaned storage volumes running results in unnecessary financial costs that accumulate rapidly over time. Additionally, abandoned or unmonitored server instances become a hidden security liability, as they rarely receive critical operating system security patches, making them easy targets for exploitation.
 
 ---
 
@@ -385,13 +403,13 @@ Write your answer here.
 
 Paste your LinkedIn post URL here:
 
-`__________________________`
-
+https://www.linkedin.com/posts/john-essel-boafo-4ab79555_devops-sre-cloudsecurity-share-7484521742158159872-PJl6/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAuvIYMB9Ryolxl8KsPVg0BaN-tpeQW214U
+ 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![screenshot](./screenshots/linkscreenshot.JPG)
 
 ---
 
