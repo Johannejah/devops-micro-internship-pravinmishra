@@ -79,8 +79,8 @@ Week 02 → Agentic AI with Claude Code
 Week 03 → Linux & Bash for DevOps
 [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/)
 
-<!-- Week 04 → Git & GitHub -->
-<!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) -->
+Week 04 → Git & GitHub
+[![Week 04 – Git](./badges/week-04.svg)](./week-04-github/)
 
 <!-- Week 05 → DevOps Lifecycle & Agile -->
 <!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
@@ -132,7 +132,7 @@ Week 03 → Linux & Bash for DevOps
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/john-essel-boafo-4ab79555_epic-reads-shop-young-adult-ya-books-share-7441830093540241408-BKie/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAuvIYMB9Ryolxl8KsPVg0BaN-tpeQW214U | https://medium.com/@johannejah/from-managing-people-to-managing-systems-bridging-hr-strategy-with-devops-cloud-security-dbeb06951ba1?sharedUserId=johannejah |
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/john-essel-boafo-4ab79555_what-would-a-journalist-write-about-your-share-7478653776858398720-KcKV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAuvIYMB9Ryolxl8KsPVg0BaN-tpeQW214U | https://medium.com/@johannejah/what-would-a-journalist-write-about-your-career-three-years-from-now-542d80c56487?sharedUserId=johannejah |
-| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/john-essel-boafo-4ab79555_dmibypravinmishra-agenticai-claudecode-share-7481842800142008322-5wLr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAuvIYMB9Ryolxl8KsPVg0BaN-tpeQW214U | — |
+| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/john-essel-boafo-4ab79555_dmibypravinmishra-agenticai-claudecode-share-7481842800142008322-5wLr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAuvIYMB9Ryolxl8KsPVg0BaN-tpeQW214U | https://medium.com/@johannejah/agentic-ai-in-devops-14bb9143b621?sharedUserId=johannejah |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/john-essel-boafo-4ab79555_devops-sre-cloudsecurity-share-7484521742158159872-PJl6/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAuvIYMB9Ryolxl8KsPVg0BaN-tpeQW214U | https://medium.com/@johannejah/milestone-unlocked-production-maintenance-chaos-engineering-on-aws-milestone-fc8380bdebbf?sharedUserId=johannejah |
 | 04 | Git & GitHub | 🔄 In Progress | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
